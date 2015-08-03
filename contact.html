@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	AJ Tyzack and Company Limited
+	by Hayden Smith 
+	Skyzack.com	
+-->
+<html>
+	<head>
+		<title>Contact-AJ Tyzack & Co</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div id="icon_wrapper">
+					<img src="images/newlogoS2.png" border="0" alt="logo" />
+						</div>	
+					<nav id="nav">
+						<ul>
+	<li><a href="./index.html" class="animsition-link">Home</a></li> 
+	<li><a href="./about.html" class="animsition-link">About</a></li> 
+	<li><a href="./processes.html" class="animsition-link">Processes</a></li> 
+	<li><a href="./services.html" class="animsition-link">Services</a></li> 
+	<li><a href="./news.html" class="animsition-link">News</a></li> 
+	<li><a href="./contact.html" class="animsition-link">Contact</a></li> 
+	</ul>
+
+
+  </div>									   
+
+												   
+												   </ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container 75%">
+					<header>
+						<h2>Contact Us</h2>
+						<p>Tell us what you think about our little operation.</p>
+					</header>
+					
+					<div class="box">
+						<form method="post" action="mail.php">
+							<div class="row uniform 50%">
+								<div class="6u 12u(mobilep)">
+									<input type="text" name="name" id="name" value="" placeholder="Name" />
+								</div>
+								<div class="6u 12u(mobilep)">
+									<input type="email" name="email" id="email" value="" placeholder="Email" />
+								</div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="12u">
+									<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+								</div>
+							</div>
+							<div class="row uniform 50%">
+								<div class="12u">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+							</div>
+							<div class="row uniform">
+								<div class="12u">
+									<ul class="actions align-center">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					<div class="box">
+							<div class="row">
+							<div class="6u 12u(mobilep)">
+							<h3>Find Us</h3>
+                                                              
+																<div id="map_canvas"></div>
+								</div>
+								<div class="6u 12u(mobilep)">
+								<h3>Contact us</h3>
+								<p><Strong>Tel: </strong> 0044 (0)1625 574111</p>
+								<p><Strong>Address: </strong>Waters Green House</br>
+								Macclesfield</br>
+								SK11 6LF</br>
+								UK
+								</div>
+							
+					
+					
+					
+					
+					
+					</div>
+					</div>
+					
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+                                                <li>
+                                                    <li><a href="https://www.facebook.com/pages/A-J-Tyzack-Co-Ltd/493659024064222?fref=ts" class="icon fa-facebook-official"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com/108457709905552728757/about?gl=uk&hl=en" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://www.linkedin.com/in/ajtyzack" class="icon fa-linkedin"><span class="label">Linked In+</span></a></li>
+                                                <li><a href="assets/sitemap.xml" class="icon fa-sitemap"><span class="label">Linked In+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; AJ Tyzack & Co. All rights reserved.</li><li>Design: <a href="http://skyzack.com">Skyzack</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li>
+					</ul>
+					<ul class="copyright">
+					<li>A. J. Tyzack & Company Limited is a work experience provider and is environmentally friendly (paperless)</li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gmaps.js"></script>
+			<script src="http://maps.google.com/maps/api/js?sensor=false&dummy=.js"></script>
+			<script type="text/javascript">
+			
+var map;
+var panorama;
+jQuery(function($) {
+    $(document).ready(function() {
+        var latlng = new google.maps.LatLng(53.2591651,-2.1227037,19);
+		
+				var marker = new google.maps.Marker({
+				icon: 'schools_maps.png',
+  position: latlng,
+  map: map,
+});
+		
+        var myOptions = {
+            zoom: 17,
+            center: latlng,
+            panControl: true,
+            zoomControl: true,
+            zoomControlOptions: {
+                                  style: google.maps.ZoomControlStyle.SMALL
+                                },
+								
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+           };
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+        });
+});
+</script>
+
+	</body>
+</html>
